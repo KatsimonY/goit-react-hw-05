@@ -14,7 +14,12 @@
   text-decoration: none;
   color: inherit;
   position: relative;
-  transition: color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.link:hover:not(.active) {
+  color: rgba(255, 68, 0, 0.7);
+  background-color: rgba(128, 128, 128, 0.3);
 }
 
 .link:after {

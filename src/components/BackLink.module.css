@@ -1,0 +1,21 @@
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: 500;
+  border: 2px solid #cccccce5;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 10px;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.link:hover,
+.link:focus {
+  border-color: rgba(255, 68, 0, 0.7);
+  box-shadow: 0 0 5px rgba(255, 68, 0, 0.5);
+}

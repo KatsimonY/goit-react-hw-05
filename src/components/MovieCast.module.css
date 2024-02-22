@@ -1,9 +1,10 @@
 .container {
+  margin: 0;
+  padding: 20px 0;
   list-style: none;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 200px);
-  /* gap: 16px; */
   column-gap: 100px;
   row-gap: 20px;
 }
@@ -15,6 +16,7 @@
 }
 
 .photo {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   height: 150px;
   object-fit: contain;
@@ -27,4 +29,11 @@
 .character {
   margin: 0;
   color: gray;
+}
+
+.null {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  font-size: larger;
 }

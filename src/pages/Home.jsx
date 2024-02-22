@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getTrending } from "../api";
-import { TrendingList } from "../components/TrendingList";
+import { MovieList } from "../components/MovieList";
 
 export default function Home() {
   const [films, setFilms] = useState([]);
@@ -10,7 +10,9 @@ export default function Home() {
       try {
         const fetchedFilms = await getTrending();
         setFilms(fetchedFilms);
-      } catch (error) {}
+      } catch (error) {
+        console.log(error);
+      }
     }
 
     fetchData();
@@ -19,7 +21,7 @@ export default function Home() {
   return (
     <main>
       <h1>Trending today</h1>
-      {films.length > 0 && <TrendingList films={films} />}
+      {films.length > 0 && <MovieList films={films} />}
     </main>
   );
 }

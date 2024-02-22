@@ -13,6 +13,7 @@
 }
 
 .logo {
+  font-size: x-large;
   text-decoration: none;
   color: inherit;
   font-weight: 700;
@@ -25,6 +26,12 @@
   text-decoration: none;
   color: black;
   font-weight: 500;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.link:hover:not(.active) {
+  color: rgba(255, 68, 0, 0.7);
+  background-color: rgba(128, 128, 128, 0.3);
 }
 
 .active {

@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.error {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 20px;
+}
