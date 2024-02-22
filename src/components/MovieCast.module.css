@@ -1,0 +1,30 @@
+.container {
+  list-style: none;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 200px);
+  /* gap: 16px; */
+  column-gap: 100px;
+  row-gap: 20px;
+}
+
+.star {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.photo {
+  border-radius: 10px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.name {
+  margin: 0;
+}
+
+.character {
+  margin: 0;
+  color: gray;
+}
