@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getTrending } from "../api";
 import { MovieList } from "../components/MovieList";
 
-export default function Home() {
+export default function HomePage() {
   const [films, setFilms] = useState([]);
 
   useEffect(() => {
